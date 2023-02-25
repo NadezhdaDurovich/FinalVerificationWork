@@ -4,19 +4,19 @@
 // forms an array of strings whose length is less than or equal to 3 characters)
 
 
-int n = new Random().Next (2,5);
+int n = new Random().Next(2, 5);
 Console.WriteLine($"Создадим строчный массив из {n} слов:");
-string[] words = new string [n];
+string[] words = new string[n];
 for (int i = 0; i < n; i++)
 {
-    Console.Write($"Введите любое слово №{i+1}: ");
+    Console.Write($"Введите любое слово №{i + 1}: ");
     words[i] = Console.ReadLine();
 }
-int characters=3;
+int characters = 3;
 Console.Write($"Выведем только слова с количеством символов <= {characters}:");
 // string[] newWords=new string[n];
 Console.Write("[");
-for (int i=0; i<words.Length;i++)
+for (int i = 0; i < words.Length; i++)
 {
     int count = 0;
     for (int j = 0; j < words[i].Length; j++)
